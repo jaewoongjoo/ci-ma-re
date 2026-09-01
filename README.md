@@ -13,4 +13,4 @@ This repository is for the paper **"Random Effects Meta-Analysis When the Studie
 
 Each script installs any missing R packages, sets its working directory to the directory containing the script, and writes its output beside the code or in the indicated output directory.
 
-The simulation `.rds` files do not need to be distributed with the repository. Running `ci-ma-re.R` creates the simulation files required by the Figure 1--3 and Figure S1--S4 scripts. Running `ci-ma-re-real-data.R` creates the tables required by the Figure 5, Figure 6, and Figure S5.
+Running `ci-ma-re.R` creates the simulation files required by the Figure 1--3 and Figure S1--S4 scripts. Running `ci-ma-re-real-data.R` creates the tables required by the Figure 5, Figure 6, and Figure S5.
