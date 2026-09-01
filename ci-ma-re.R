@@ -46,11 +46,16 @@ c5 <- c1
 c6 <- c1
 c7 <- c1
 c8 <- c1
-Sigma_true <- 5 * matrix(c(1, c1, c2, c3, c4, c5, c6, c7, c8, c1, 1, c1, c2, c3, c4, c5, 
-    c6, c7, c2, c1, 1, c1, c2, c3, c4, c5, c6, c3, c2, c1, 1, c1, c2, c3, c4, c5, c4, c3, 
-    c2, c1, 1, c1, c2, c3, c4, c5, c4, c3, c2, c1, 1, c1, c2, c3, c6, c5, c4, c3, c2, c1, 
-    1, c1, c2, c7, c6, c5, c4, c3, c2, c1, 1, c1, c8, c7, c6, c5, c4, c3, c2, c1, 1), nrow = p + 
-    1, ncol = p + 1)
+Sigma_true <- 5 * matrix(c(1, c1, c2, c3, c4, c5, c6, c7, c8, 
+                           c1, 1, c1, c2, c3, c4, c5, c6, c7, 
+                           c2, c1, 1, c1, c2, c3, c4, c5, c6, 
+                           c3, c2, c1, 1, c1, c2, c3, c4, c5, 
+                           c4, c3, c2, c1, 1, c1, c2, c3, c4, 
+                           c5, c4, c3, c2, c1, 1, c1, c2, c3, 
+                           c6, c5, c4, c3, c2, c1, 1, c1, c2, 
+                           c7, c6, c5, c4, c3, c2, c1, 1, c1, 
+                           c8, c7, c6, c5, c4, c3, c2, c1, 1), 
+                         nrow = p + 1, ncol = p + 1)
 
 mu_x <- c(-1, 0, 1, -1, 1, -3, 1, 3)
 num_study <- c(rep(400, k/4), rep(500, k/4), rep(600, k/4), rep(700, k/4))
