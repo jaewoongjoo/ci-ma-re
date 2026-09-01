@@ -29,11 +29,16 @@ rho.vals <- c("0.3", "0.6", "0.8", "0.9")
 p <- 8
 n <- p + 1
 c1 <- 0.3
-Sigma.true <- 5 * matrix(c(1, c1, c1, c1, c1, c1, c1, c1, c1, c1, 1, c1, c1, c1, c1, c1, 
-    c1, c1, c1, c1, 1, c1, c1, c1, c1, c1, c1, c1, c1, c1, 1, c1, c1, c1, c1, c1, c1, c1, 
-    c1, c1, 1, c1, c1, c1, c1, c1, c1, c1, c1, c1, 1, c1, c1, c1, c1, c1, c1, c1, c1, c1, 
-    1, c1, c1, c1, c1, c1, c1, c1, c1, c1, 1, c1, c1, c1, c1, c1, c1, c1, c1, c1, 1), nrow = n, 
-    ncol = n)
+Sigma.true <- 5 * matrix(c(1, c1, c1, c1, c1, c1, c1, c1, c1, 
+                           c1, 1, c1, c1, c1, c1, c1, c1, c1, 
+                           c1, c1, 1, c1, c1, c1, c1, c1, c1, 
+                           c1, c1, c1, 1, c1, c1, c1, c1, c1, 
+                           c1, c1, c1, c1, 1, c1, c1, c1, c1, 
+                           c1, c1, c1, c1, c1, 1, c1, c1, c1, 
+                           c1, c1, c1, c1, c1, c1, 1, c1, c1, 
+                           c1, c1, c1, c1, c1, c1, c1, 1, c1, 
+                           c1, c1, c1, c1, c1, c1, c1, c1, 1), 
+                         nrow = n, ncol = n)
 
 summ <- setNames(vector("list", length(rho.tags)), rho.tags)
 for (tag in rho.tags) {
