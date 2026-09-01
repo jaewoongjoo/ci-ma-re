@@ -34,7 +34,6 @@ step_init <- 0.001
 step_min <- 1e-15
 gamma_init_scale <- 1
 gamma_init_offdiag <- 0
-gamma_init_structure <- "dense"
 alpha_level <- 0.05
 zcrit <- qnorm(1 - alpha_level/2)
 mu_true <- c(-3, 3, 1, -1, -3, 3, 1, -1, -3)
